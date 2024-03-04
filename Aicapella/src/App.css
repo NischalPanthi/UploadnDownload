@@ -1,0 +1,82 @@
+@font-face {
+  font-family: anta;
+  src: url(../public/Anta-Regular.ttf);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: anta;
+  color: rgb(255, 255, 255);
+  background-image: url("../public/images/wave1.jpg"), url("../public/images/singing1.png"),url("../public/images/singing2.png"),url("../public/images/wave2.png");
+  background-size: auto, auto,auto 50%,auto 25%;
+  background-repeat: repeat-x, no-repeat,no-repeat,no-repeat;
+  background-position-y: 10%,100%,100%,80%;
+  background-position-x:0%,0%,100%,50%;
+  background-color: black;
+}
+
+
+.title{
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+}
+
+
+
+.body{
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+  font-size: 60px;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+audio{
+  width: 400px;
+}
+
+.upload{
+  background-color: black;
+  border: 2px solid rgb(168, 43, 226);
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-right: 20px;
+  color: aliceblue;
+  font-family: anta;
+  font-size: 30px;
+  transition: background-color, padding 1s;
+}
+
+.upload:hover{
+  cursor: pointer;
+  background-color: rgb(168, 43, 226);
+  padding: 10px 25px 10px 25px;
+}
+
+.download{
+  background-color: black;
+  border: 2px solid lawngreen;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  margin-left: 20px;
+  color: aliceblue;
+  font-family: anta;
+  font-size: 30px;
+  transition: background-color,padding 1s;
+}
+
+.download:hover{
+  cursor: pointer;
+  padding: 10px 25px 10px 25px;
+  background-color: lawngreen;
+  background-image: "download.png";
+}
